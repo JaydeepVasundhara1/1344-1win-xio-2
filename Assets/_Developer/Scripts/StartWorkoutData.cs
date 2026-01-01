@@ -37,7 +37,10 @@ public class StartWorkoutData : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        backBtn.GetComponent<Image>().color = ColorApplicator.instance.TextColor;
+        _time.color = ColorApplicator.instance.TextColor;
+        timerText.color = ColorApplicator.instance.TextColor;
+        workoutTimerFill.GetComponent<Image>().color = ColorApplicator.instance.ImageColor_dark;
     }
 
     private void OnEnable()
@@ -51,11 +54,10 @@ public class StartWorkoutData : MonoBehaviour
 
             if (WorkoutSoundManager.isSoundOn)
             {
-                TextToSpeech tts = GetComponent<TextToSpeech>();
-                tts.Speak(titleTTS);
-                tts.SetSpeed(0.5f);
-                tts.SetLanguage(TextToSpeech.Locale.US);
-                tts.SetPitch(1f);
+                TTSManager.Instance.Speak(titleTTS);
+                TTSManager.Instance.SetSpeed(0.5f);
+                TTSManager.Instance.SetLanguage(TextToSpeech.Locale.US);
+                TTSManager.Instance.SetPitch(1f);
             }           
         }        
     }
@@ -111,7 +113,7 @@ public class StartWorkoutData : MonoBehaviour
         _title.text = title;
         titleTTS = title.ToLower().Replace("ups", "up's");
 
-        string titleWithoutSpaces = title.Replace(" ", "").Replace("-", "").Replace("&", "");
+        string titleWithoutSpaces = title.Replace(" ", "").Replace("-", "").Replace("&", "").Replace("'", "");
         _image.GetComponent<SpriteAnimator>().folderName = titleWithoutSpaces;
 
         PanelTransition infoPanelTransition = infoBtn.GetComponent<PanelTransition>();

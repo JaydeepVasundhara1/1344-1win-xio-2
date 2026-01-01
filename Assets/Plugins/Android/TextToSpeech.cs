@@ -107,7 +107,7 @@ public class TextToSpeech :MonoBehaviour
         }
         TTSExample.Set<float>("Pitch", pitch);
     }
-    private void Initialize()
+    public void Initialize()
     {
         if (TTSExample == null)
         {

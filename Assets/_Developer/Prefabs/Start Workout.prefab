@@ -1076,7 +1076,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1185,7 +1185,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2270313067044000431}
   - component: {fileID: 4678716206389285561}
-  - component: {fileID: 3805121717235872577}
   - component: {fileID: 6530466426836612168}
   m_Layer: 5
   m_Name: Start Workout
@@ -1254,18 +1253,6 @@ MonoBehaviour:
   progressTrackerParent: {fileID: 2406897612184723918}
   progressTrackerBarPrefab: {fileID: 758124687619655286, guid: 2d3253516d11d47b9950cbfd919a034c, type: 3}
   progressTrackerBarCompleteSprite: {fileID: 21300000, guid: d116829a3595d4215b833aaba588f250, type: 3}
---- !u!114 &3805121717235872577
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5576217826493669410}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fda721609383d6d4dac972d09aa900ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &6530466426836612168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1549,7 +1536,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

@@ -20,7 +20,11 @@ public class ExerciseDescriptionData : MonoBehaviour
 
     void Start()
     {
-        
+        GetComponent<Image>().color = ColorApplicator.instance.ImageColor_light;
+        exerciseListBackBtn.GetComponent<Image>().color = ColorApplicator.instance.TextColor;
+        startWorkoutBackBtn.GetComponent<Image>().color = ColorApplicator.instance.TextColor;
+        _title.color = ColorApplicator.instance.TextColor;
+        exerciseNo.color = ColorApplicator.instance.TextColor;
     }
 
     // Update is called once per frame
@@ -36,7 +40,7 @@ public class ExerciseDescriptionData : MonoBehaviour
         string modifiedDescription = description.Replace("\\r\\n", "\n").Replace("\\n\\n", "\n\n").Replace("\\n", "\n");
         _description.text = modifiedDescription;
 
-        string titleWithoutSpaces = title.Replace(" ", "").Replace("-", "").Replace("&", "");
+        string titleWithoutSpaces = title.Replace(" ", "").Replace("-", "").Replace("&", "").Replace("'", "");
         _image.GetComponent<SpriteAnimator>().folderName = titleWithoutSpaces;
 
         exerciseNo.text = id + "/" + total;
@@ -67,6 +71,8 @@ public class ExerciseDescriptionData : MonoBehaviour
 
         nextBtn.onClick.RemoveAllListeners();
         nextBtn.onClick.AddListener(transitionNext.TransitionNext);
+
+
     }
 
     public void SetDescriptionBackBtnPreviousPanel(PreviousPanelType previousPanelType)

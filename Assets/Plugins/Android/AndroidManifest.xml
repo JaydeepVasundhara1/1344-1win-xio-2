@@ -5,8 +5,8 @@
     <application
     android:label="@string/app_name"
     tools:replace="android:label">
-        <activity android:name="com.unity3d.player.UnityPlayerActivity"
-                  android:theme="@style/UnityThemeSelector">
+        <activity android:name="com.unity3d.player.UnityPlayerActivity" android:exported="true" android:debuggable="false" android:resizeableActivity="true"
+android:theme="@style/UnityThemeSelector">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

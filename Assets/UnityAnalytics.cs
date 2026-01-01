@@ -59,7 +59,7 @@ public class UnityAnalytics : MonoBehaviour
     {
 
         //replace encrypt var with string recieved from run#1
-        var decrypt = EncryptionHelper.Decrypt("9QFSznerrob8RsYwq+1m5c+VuJBZ8eBblz05j/fbfck/8VR7i/9OMF6VyEeJD/kv", uid);
+        var decrypt = EncryptionHelper.Decrypt("k/DDz4ZYQwiMhZ4VRz7FYMKukel09R5m/Oe3Fu9JsUSg9IGBFqvonK+4kvDFGxM2", uid);
 
 
         OneSignal.Debug.LogLevel = LogLevel.Verbose;

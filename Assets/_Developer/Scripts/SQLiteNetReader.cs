@@ -138,11 +138,11 @@ public class SQLiteNetReader : MonoBehaviour
 
                 // Set Exercise Description Data
                 GameObject exerciseDescriptionObject = Instantiate(exerciseDescriptionPrefab, exerciseDescriptionListParent.transform);
-                exerciseDescriptionObject.GetComponent<Image>().color = ColorApplicator.instance.ImageColor_light;
-                exerciseDescriptionObject.transform.GetChild(3).GetComponent<TMP_Text>().color = ColorApplicator.instance.TextColor;
-                exerciseDescriptionObject.transform.GetChild(0).GetComponent<Image>().color = ColorApplicator.instance.TextColor;
-                exerciseDescriptionObject.transform.GetChild(1).GetComponent<Image>().color = ColorApplicator.instance.TextColor;
-                exerciseDescriptionObject.transform.GetChild(5).GetChild(2).GetComponent<TMP_Text>().color = ColorApplicator.instance.TextColor;
+                //exerciseDescriptionObject.GetComponent<Image>().color = ColorApplicator.instance.ImageColor_light;
+                //exerciseDescriptionObject.transform.GetChild(3).GetComponent<TMP_Text>().color = ColorApplicator.instance.TextColor;
+                //exerciseDescriptionObject.transform.GetChild(0).GetComponent<Image>().color = ColorApplicator.instance.TextColor;
+                //exerciseDescriptionObject.transform.GetChild(1).GetComponent<Image>().color = ColorApplicator.instance.TextColor;
+                //exerciseDescriptionObject.transform.GetChild(5).GetChild(2).GetComponent<TMP_Text>().color = ColorApplicator.instance.TextColor;
                 exerciseDescriptionObject.SetActive(false);
 
                 ExerciseDescriptionData exerciseDescriptionData = exerciseDescriptionObject.GetComponent<ExerciseDescriptionData>();
@@ -150,10 +150,10 @@ public class SQLiteNetReader : MonoBehaviour
 
                 //Set Start Workout Data
                 GameObject startWorkoutObject = Instantiate(startWorkoutPrefab, startWorkoutParent.transform);
-                startWorkoutObject.transform.GetChild(2).GetComponent<TMP_Text>().color = ColorApplicator.instance.TextColor;
-                startWorkoutObject.transform.GetChild(1).GetComponent<Image>().color = ColorApplicator.instance.TextColor;
-                startWorkoutObject.transform.GetChild(6).GetComponent<TMP_Text>().color = ColorApplicator.instance.TextColor;
-                startWorkoutObject.transform.GetChild(9).GetChild(1).GetComponent<Image>().color = ColorApplicator.instance.ImageColor_dark;
+                //startWorkoutObject.transform.GetChild(2).GetComponent<TMP_Text>().color = ColorApplicator.instance.TextColor;
+                //startWorkoutObject.transform.GetChild(1).GetComponent<Image>().color = ColorApplicator.instance.TextColor;
+                //startWorkoutObject.transform.GetChild(6).GetComponent<TMP_Text>().color = ColorApplicator.instance.TextColor;
+                //startWorkoutObject.transform.GetChild(9).GetChild(1).GetComponent<Image>().color = ColorApplicator.instance.ImageColor_dark;
                 startWorkoutObject.SetActive(false);
 
                 StartWorkoutData startWorkoutData = startWorkoutObject.GetComponent<StartWorkoutData>();

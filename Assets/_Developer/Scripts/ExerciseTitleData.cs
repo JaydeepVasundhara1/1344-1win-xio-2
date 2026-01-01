@@ -35,7 +35,7 @@ public class ExerciseTitleData : MonoBehaviour
             _time.text = time;
         }
 
-        string titleWithoutSpaces = title.Replace(" ", "").Replace("-", "").Replace("&", "");
+        string titleWithoutSpaces = title.Replace(" ", "").Replace("-", "").Replace("&", "").Replace("'", "");
         _image.GetComponent<SpriteAnimator>().folderName = titleWithoutSpaces;
     }
 }
